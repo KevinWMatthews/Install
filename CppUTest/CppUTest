@@ -1,0 +1,25 @@
+You can download and unpack a tarball and then run the configure scripts.
+
+This time I tried apt-get install cpputest.
+This installs the header files in
+/usr/include/CppUTest and /usr/include/CppUTestExt
+
+
+
+There are a bunch of shell scripts that you can use to easily create the files needed for testing (I think).
+They are located in /usr/share/cpputest/scripts
+
+Once installed they'll be located in /usr/local/bin (to enable ease of use).
+To install the scripts, run
+sudo ./InstallScripts.sh
+
+You may need to run
+(sudo) chmod a+x *.sh
+to add execute privilege to the scripts.
+
+They are located directly in /usr/local/bin
+Maybe I'll want to move them into a subfolder?
+
+
+Look in /usr/share/doc/cpputest
+
