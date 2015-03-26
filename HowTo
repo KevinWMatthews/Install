@@ -1,0 +1,16 @@
+	To install things from the terminal,
+sudo add-apt-repository ppa:<repository_info>
+sudo apt-get update
+sudo apt-get install <application_name>
+or
+sudo apt-get remove <application_name>
+
+
+
+ddd
+qemu
+Arduino
+  can't remember what it did...
+
+VNC viewer: vncviewer
+

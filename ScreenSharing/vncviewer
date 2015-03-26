@@ -1,0 +1,26 @@
+Run VNC Viewer from the terminal with:
+vncviewer
+
+To install VNC Viewer:
+Download the 64-bit installer
+
+Read the README and ran the install script using:
+sudo ./vncinstall /usr/local/bin /usr/local/man
+tot install both the program and the manual.
+
+Install output:
+  Installed init script for VNC X11 Service-mode daemon
+  Start and stop the service with:
+    /etc/init.d/vncserver-x11-serviced (start|stop)
+  Use update-rc.d to start or stop the service at boot time.
+  Notice: the installed init template may need to be manually configured, as
+  vncserver-x11-serviced is not installed in /usr/bin.
+
+  Installed init script for VNC Virtual-mode daemon
+  Start and stop the service with:
+    /etc/init.d/vncserver-virtuald (start|stop)
+  Use update-rc.d to start or stop the service at boot time.
+  Notice: the installed init template may need to be manually configured, as
+  vncserver-virtuald is not installed in /usr/bin.
+
+

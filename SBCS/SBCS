@@ -1,0 +1,9 @@
+To build BeagleBoneBlack code for touchscreen in serlcd/serlcd:
+  chrpath
+  texinfo
+  OH GOD NO   x11  DON'T REMOVE THIS
+  Freetype  Switch Order with HarfBuzz??
+  HarfBuzz
+
+To recompile the kernel:
+

@@ -1,0 +1,6 @@
+For screen sharing
+
+Depends on tmux
+sudo apt-get install tmux
+sudo apt-get install byobu
+

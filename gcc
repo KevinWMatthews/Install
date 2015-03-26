@@ -1,0 +1,6 @@
+gcc-arm-none-eabi
+
+#gcc-arm-none-gdb, using
+#	sudo apt-get -o Dpkg::Options::="--force-overwrite" #install gdb-arm-none-eabi
+#	There was an Ubuntu bug so gdb-arm-none-eabi conflicted #with gdb. "broken pipe" error, etc.
+

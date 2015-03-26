@@ -1,0 +1,20 @@
+Install HarfBuzz:
+
+Read INSTALL. README was useless
+
+Install dependencies:
+sudo apt-get install gcc g++ libfreetype6-dev libglib2.0-dev libcairo2-dev
+
+Download tarball
+	./configure
+	make
+~make failed; needs to:
+	install automake
+	install ragel
+
+~Ok, now it works
+	make
+	make check
+	sudo make install
+#not sure if and what make installcheck does
+

@@ -1,0 +1,9 @@
+git
+gitk
+git-gui
+git-doc
+Had to run
+sudo add-apt-repository ppa:git-core/ppa
+  to install v2.2.0
+TODO figure this out
+

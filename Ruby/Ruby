@@ -1,0 +1,3 @@
+#Did it the simple way this time and just installed ruby 1.9.1
+sudo apt-get install ruby
+

@@ -1,0 +1,15 @@
+LPCXpresso is a 32-bit IDE. To get it to run on a 64-bit system, you must install:
+
+sudo apt-get install libgtk2.0-0:i386 libxtst6:i386 libpangox-1.0-0:i386 \
+libpangoxft-1.0-0:i386 libidn11:i386 libglu1-mesa:i386 \
+libncurses5:i386 libudev1:i386 libusb-1.0:i386 libusb-0.1:i386 \
+gtk2-engines-murrine:i386 libnss3-1d:i386
+
+Download the latest tarball.
+
+Run the installer.
+
+Reboot your computer.
+
+Check for post-install issues.
+

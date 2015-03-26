@@ -1,0 +1,19 @@
+exercism
+used curl to download and install exercism:
+  cd to Downloads
+curl -O http://cli.exercism.io/install
+chmod +x install
+
+sudo ./install
+
+Log in to exercism.io and find my API key
+exercism configure --key=<API_KEY>
+
+#exercism fetch
+#In my case, I pulled all of my existing exercises from GitHub.
+
+#Didn't have to do this this time.
+#  Created /home/kevin/bin
+#  Added /home/kevin/bin to PATH
+#  Created /home/kevin/exercism
+

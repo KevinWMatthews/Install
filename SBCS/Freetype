@@ -1,0 +1,25 @@
+Download Freetype tarball from SourceForge
+This doesnt' work: Read the docs:
+	unzip
+	./configure
+	make
+	sudo make install
+That didn't work. We need the dependent libraries? Read the bottom of ./configure's output
+
+Try this:
+./configure --without-harfbuzz
+make
+make install
+
+Install HarfBuzz
+*whew*
+
+Then run
+./configure
+make
+make install
+
+
+Check /usr/include for freetype2
+WOO HOO!
+

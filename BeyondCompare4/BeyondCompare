@@ -1,0 +1,19 @@
+BeyondCompare4
+
+#Install dependency
+sudo apt-get install gdebi
+
+Download and run the Debian installer.
+
+
+To add context menu support to Linux mint I used https://github.com/kferrio/mint-beyond-compare:
+Clone the repo into ~/.local/share/nemo/actions
+
+cd into directory
+
+chmod +x helper.py
+
+./helper.py # one-time setup
+
+Enjoy!
+
