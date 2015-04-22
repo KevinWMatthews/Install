@@ -1,26 +1,4 @@
-Download the 6x bit version of Sublime Text 3
+Download the 64 bit .deb version of Sublime Text 3
 
-#Would like to learn how to point it to the Downloads folder
-#Or just cd to Downloads
-wget http://c758482.r82.cf2.rackcdn.com/sublime_text_3_build_3059_x64.tar.bz2
-
-#Extract the tarball
-tar vxjf sublime_text_3_build_3059_x64.tar.bz2
-
-#Move the extrated subl3 files to /opt/ where 3rd party programs are commonly placed.
-sudo mv sublime_text_3 /opt/
-
-#Create/open subl3
-nano subl3
-
-#Enter the following text:
-#!/bin/sh
-exec /opt/sublime_text_3/sublime_text "$@"
-
-#Set access permissions
-sudo chmod 755 subl3
-	#Anyone can read or execute, but only owner can write
-
-#Move script to correct directory
-sudo mv subl3 /usr/bin/
+Ignored the recommendation to install from the (channel?) because I don't know what it means.
 

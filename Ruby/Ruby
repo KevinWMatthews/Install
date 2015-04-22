@@ -1,3 +1,6 @@
 #Did it the simple way this time and just installed ruby 1.9.1
 sudo apt-get install ruby
 
+#Update minitest for exercism exercises, unit tests
+sudo gem install minitest
+
