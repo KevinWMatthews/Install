@@ -1,9 +1,41 @@
 You can download and unpack a tarball and then run the configure scripts.
+This will get you the latest and greates.
+Refer to README.md for instructions. It's ok, they aren't that hard to follow. Really!
 
-This time I tried apt-get install cpputest.
+
+OK...
+If you get an error stating that:
+Makefile.am:37: warning: source file '<filename>' is in a subdirectory,
+Makefile.am:37: but option 'subdir-objects' is disabled
+automake: warning: possible forward-incompatibility.
+automake: At least a source file is in a subdirectory, but the 'subdir-objects'
+automake: automake option hasn't been enabled.  For now, the corresponding output
+automake: object file(s) will be placed in the top-level directory.  However,
+automake: this behaviour will change in future Automake versions: they will
+automake: unconditionally cause object files to be placed in the same subdirectory
+automake: of the corresponding sources.
+automake: You are advised to start using 'subdir-objects' option throughout your
+automake: project, to avoid future incompatibilities.
+
+Then you need to add subdir-objects as an option to AM_INIT_AUTOMAKE
+You can do this by
+  opening configure.ac and replacing
+    AM_INIT_AUTOMAKE
+  with
+    AM_INIT_AUTOMAKE(subdir-objects)
+WOO!
+
+Huh, that caused a make error.
+
+I looked in the Install file (a readme, really) and it leaves out the ./autogen.sh step
+I just ran .configure, make, and sudo make install
+That has worked so far... it installed but it still can't find all of the mock files. BOO!
+
+
+I've also tried using sudo apt-get install cpputest.
 This installs the header files in
 /usr/include/CppUTest and /usr/include/CppUTestExt
-
+It works but gave me a very old version.
 
 
 There are a bunch of shell scripts that you can use to easily create the files needed for testing (I think).
@@ -23,3 +55,8 @@ Maybe I'll want to move them into a subfolder?
 
 Look in /usr/share/doc/cpputest
 
+
+
+I had a bad package floating around. Once I removed it I was able to go in and recompile and install from source.
+Look into the bad directory. Let them know?
+Remove CppUTest and reinstall it so that I can update this.

@@ -1,0 +1,9 @@
+Can download the 64-bit toolchain for Linux directly from the AVR website, but this just gives you a big folder. Stuff isn't installed.
+
+Tried running these:
+sudo apt-get install gcc-avr   # A port of GCC to AVR target processor
+sudo apt-get install gdb-avr   # AVR GNU debugger
+sudo apt-get install binutils-avr #low-level utilities for building & manipulating object files
+sudo apt-get install avr-libc # AVR Library files
+sudo apt-get install avrdude # command-line program for programming AVR chips.
+

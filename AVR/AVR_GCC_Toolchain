@@ -16,3 +16,6 @@ Suggested (and installed):
 avrdude-doc gdb-doc
 
 If you want to read more, the avr-libc-user-manual has been pretty good! I got it by downloading the Atmel Toolchain from the Atmel website, but I'm sure you can find it elsewhere.
+
+Files are installed in:
+/usr/lib/avr
