@@ -1,0 +1,14 @@
+CMake
+
+Recommended getting an IDE:
+codeblocks or eclipse
+
+It automatically installs cmake-data.
+
+apt-get installs version 2.8.12. I want something more up-to-date.
+
+Download the latest tarball from cmake's website
+  run
+./bootstrap
+make
+sudo make install
