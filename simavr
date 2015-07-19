@@ -1,0 +1,77 @@
+simavr
+
+Include files for simavr are installed in:
+/usr/local/include/simavr
+
+Libraries from simavr are installed in:
+/usr/local/lib
+
+There is also stuff in
+/usr/local/bin
+
+
+
+### Install process ###
+Fork and clone the repo from Git:
+https://github.com/buserror/simavr
+
+It won't compile.
+
+Read the manual, which recommends installing
+sudo apt-get install elfutils
+
+The manual also recommended
+sudo apt-get install clang
+
+
+
+Getting a warning:
+WARNING cores/sim_mega128rfr2.c did not compile, check your avr-gcc toolchain
+The manual says that this is because we have the wrong director for AVR_ROOT.
+
+Looked through bits about setting AVR_ROOT in the akefile but it looked to be set up fine.
+Tried passing AVR_ROOT=/usr/lib/avr but it didn't seem to help.
+It does keep compiling, so let's forget about this for now. Maybe I just won't use the ATmega128 ;)
+But when I do... :/
+
+Continuing, it still wouldn't compile because it couldn't find
+<libelf.h>
+Poked around online and found a recommendation to install:
+sudo apt-get install libelfg0
+sudo apt-get install libelfg0-dev
+
+libelfg0 was already installed.
+libelfg0-dev was installed.
+  Progress!! It now finds libelf.h
+
+
+Now it can't find <GL/glut.h>
+sudo apt-get install freeglut3 freeglut3-dev
+Yikes, but go for it.:
+The following extra packages will be installed:
+  libdrm-dev libegl1-mesa libegl1-mesa-drivers libgl1-mesa-dev libgl1-mesa-glx
+  libgl1-mesa-glx:i386 libglapi-mesa:i386 libglapi-mesa libgles2-mesa
+  libglu1-mesa-dev libwayland-egl1-mesa libx11-xcb-dev libxcb-dri2-0-dev
+  libxcb-dri3-dev libxcb-glx0-dev libxcb-present-dev libxcb-randr0-dev
+  libxcb-shape0-dev libxcb-sync-dev libxcb-xfixes0-dev libxdamage-dev
+  libxfixes-dev libxshmfence-dev libxt-dev libxxf86vm-dev mesa-common-dev
+  x11proto-damage-dev x11proto-dri2-dev x11proto-fixes-dev x11proto-gl-dev
+  x11proto-xf86vidmode-dev
+Suggested packages:
+  libxt-doc
+The following NEW packages will be installed:
+  freeglut3 freeglut3-dev libdrm-dev libgl1-mesa-dev libglu1-mesa-dev
+  libx11-xcb-dev libxcb-dri2-0-dev libxcb-dri3-dev libxcb-glx0-dev
+  libxcb-present-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-sync-dev
+  libxcb-xfixes0-dev libxdamage-dev libxfixes-dev libxshmfence-dev libxt-dev
+  libxxf86vm-dev mesa-common-dev x11proto-damage-dev x11proto-dri2-dev
+  x11proto-fixes-dev x11proto-gl-dev x11proto-xf86vidmode-dev
+The following packages will be upgraded:
+  libegl1-mesa libegl1-mesa-drivers libgl1-mesa-glx libgl1-mesa-glx:i386
+  libglapi-mesa:i386 libglapi-mesa libgles2-mesa libwayland-egl1-mesa
+8 upgraded, 25 newly installed, 0 to remove and 42 not upgraded.
+
+
+It builds! There's still the cores/sim_mega128rfr2.c warning, and there are a few
+warnings within their code, but it seems to build fine.
+
