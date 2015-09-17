@@ -11,3 +11,14 @@ import urllib2,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a309809
 
 It worked!
 
+
+
+After installing rvm to use a more up-to-date version, subl still refers to the old version. We need to update Ruby.sublime-build to use rvm instead of the default Ruby.
+
+You can use Tools -> Build System -> New Build System
+to cretea a new Ruby build system that uses rvm
+  *or*
+cd ~/.config/sublime-text-3/Packages/User
+Copy/Create Ruby.sublime-build here
+
+The code to use is on my GitHub under Ruby.sublime-build
