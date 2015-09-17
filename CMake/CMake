@@ -12,3 +12,9 @@ Download the latest tarball from cmake's website
 ./bootstrap
 make
 sudo make install
+
+Later ran
+sudo apt-get install cmake
+which installed only
+cmake-data
+Hope that didn't screw anything up, but now cmake --version works.

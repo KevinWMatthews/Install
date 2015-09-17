@@ -1,0 +1,11 @@
+sudo apt-get install curl
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+signature failed. Needed to run the following line:
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+and then run the /curl command again.
+	warning: RVM sourcing line not found for Zsh, rerun this command with '--auto-dotfiles' flag to fix it.
+
+echo 'source "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc

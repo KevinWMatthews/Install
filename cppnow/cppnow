@@ -1,0 +1,12 @@
+Install info for cppnow, a TDD tutorial in C++
+
+Download and install CMake (see separate file)
+
+Download and install boost:
+sudo apt-get install libboost-all-dev
+
+Download and install Turtle Mock:
+http://sourceforge.net/projects/turtle/
+
+You can also refer to the slides for this presentation when you find them in the Git repo.
+Follow the link from the README in the root of the repo.
