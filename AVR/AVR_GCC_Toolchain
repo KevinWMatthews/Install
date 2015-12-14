@@ -1,21 +1,21 @@
-I installed this based on a 3rd-party website recommendation:
+If you want to be sure your gcc tools are complete:
 sudo apt-get install gcc build-essential
-Looks like it can't hurt.
 
 You'll want these packages for the basic toolchain:
 sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude
-Recommended by avr-eclips.sourceforge.net
+Recommended by avr-eclipse.sourceforge.net
 
-Extra packages:
-libftdi1
-
-No longer needed: (?)
-libjs-jquery rubygems-integration
-
-Suggested (and installed):
-avrdude-doc gdb-doc
+Suggested packages:
+avrdude-doc task-c-devel gcc-doc gdb-doc
+I installed the documentation and skipped task-c-devel (I don't know what that does).
 
 If you want to read more, the avr-libc-user-manual has been pretty good! I got it by downloading the Atmel Toolchain from the Atmel website, but I'm sure you can find it elsewhere.
+
+When compiling code for AVR processors, use the command:
+avr-gcc
+
+To program chips using an ISP or a debugger, I use:
+avrdude
 
 Files are installed in:
 /usr/lib/avr
