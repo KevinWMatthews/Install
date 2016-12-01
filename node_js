@@ -1,0 +1,5 @@
+I installed node.js with a curl command and an apt-get command that I snagged from the node.js website:
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install -y nodejs

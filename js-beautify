@@ -1,0 +1,6 @@
+js-beautify
+
+I installed this AFTER I installed node.js (I thinke node.js installs npm, the node package manager?)
+
+npm -g install js-beautify
+$ js-beautify foo.js
