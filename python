@@ -1,0 +1,16 @@
+Ummmm, yeah. Not so sure about this one.
+
+I had pip and python 2.7 installed at work.
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
+
+This installed (after a failure?) and 'which virtualenv' returned fine, but 'virtualenv' wouldn't run.
+I ran
+source /usr/local/bin/virtualenvwrapper.sh
+and then it worked fine.
+Should I run
+export WORKON_HOME=~/.virtualenvs
+?
+
+The same stack overflow post suggested that I do, but I didn't.
+http://stackoverflow.com/questions/15453793/how-to-add-virtualenv-to-path
